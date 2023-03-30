@@ -31,7 +31,9 @@ var people2 = people.sortedByDescending { person -> person.age  }
 
 //Given a list similar to the one above, write a function in which you will
 //create 2 more people objects and add them to the list at one go.
+fun addPeople(adding:List<String>){
 
+}
 
 
 //Given a list of people’s heights in metres. Write a function that returns
@@ -46,9 +48,14 @@ fun heights(height:List<Double>): Pair<Double,Double>{
 //registration and mileage attribute and returns the average mileage of
 //all the vehicles in the list.
  class Car(var registration:String,var mileage:Int)
-
-
-
-
-
-
+fun avMileage():Double{
+var cars =
+    listOf(
+        Car("KDD 340W",1200),
+        Car("KDA 546Q",4500),
+        Car("KBB 560U",6000),
+        Car("KCC 540U",450)
+    )
+var cars2 = listOf(1200,4500,6000,450)
+return cars2.average()
+}
